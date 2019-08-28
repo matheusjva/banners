@@ -9,6 +9,8 @@
 
             <!-- Fonts -->
             <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+
 
             <!-- Bootstrap  -->
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -66,10 +68,17 @@
                 .m-b-md {
                     margin-bottom: 30px;
                 }
+                .hero-image {
+                    background-image: url('../../img/fundo.jpg'); /* The image used */
+                    /*height: 500px; !* You must set a specified height *!*/
+                    background-position: center; /* Center the image */
+                    background-repeat: no-repeat; /* Do not repeat the image */
+                    background-size: cover; /* Resize the background image to cover the entire container */
+                }
             </style>
         </head>
 </head>
-<body>
+<body class="hero-image">
 <div class="container">
     @if (session('status'))
                 <div class="flex-center alert alert-success">

@@ -36,11 +36,12 @@
                                         @php
                                             if($item['visible'])
                                             {
-                                                echo "<a href='#'> <img src='img/visivel.png' width='26px' height='26px'></a>";
+                                                echo "<a href='banners/itens/invisible/". $item['id'] . "'> <img src='img/visivel.png' width='26px' height='26px'></a>";
+
                                             }
                                             else
                                             {
-                                                echo "<a href='#'> <img src='img/invisivel.png' width='26px' height='26px'></a>";
+                                                echo "<a href='banners/itens/visible/" . $item['id'] . "'> <img src='img/invisivel.png' width='26px' height='26px'></a>";
                                             }
                                         @endphp
                                     </td>

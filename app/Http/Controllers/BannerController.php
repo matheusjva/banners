@@ -130,7 +130,7 @@ class BannerController extends Controller
 
     public function ativar(Banner $banner)
     {
-        $bannersItens = BannerItens::where('banner_id', '=', $banner->id)->get();
+        $bannersItens = BannerItens::where('banner_id', '=', $banner->id)->where('visible', '=', TRUE)->get();
 
         return view('includeHtmls', compact('bannersItens'));
     }

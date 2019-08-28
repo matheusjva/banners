@@ -3,24 +3,24 @@
 @section('conteudo')
     <br/>
     <div>
-        <a href="{{ url('/')}}" class="btn btn-light">Voltar</a>
+        <a href="{{ url('/')}}" class="btn btn-light">VOLTAR</a>
     </div>
     <br/>
     <div class="flex-center position-ref full-height">
         <div class="content">
-            <div class="title m-b-md">
-                CRIAR PAINEL
+            <div class=" m-b-md">
+                <h1>CRIAR PAINEL</h1>
             </div>
     
             <div class="links">
                 <form method="post" action="{{route('banners.store')}}">
                     <div class="form-group">
                         @csrf
-                        <label>Painel Name:</label>
+                        <label>NOME:</label>
                         <input type="text" class="form-control" name="name"/>
                     </div>
                     <br>
-                    <button type="submit" class="btn btn-primary">Criar Painel</button>
+                    <button type="submit" class="btn btn-primary">CRIAR</button>
                 </form>
             </div>
         </div>

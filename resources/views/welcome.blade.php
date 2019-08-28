@@ -18,9 +18,10 @@
             
             <div class="content col-xs-12 col-sm-12 col-md-10 col-lg-8  col-xl-8 ">
 
-                    <img src="img/paineis.jpg" class="img-fluid">
-
-                <div class=" links" style="color: black;">
+                <div class="container">
+                    <h1> <i class="material-icons">live_tv</i> <b>TvP</b>anel's </h1>
+                </div>
+                <div class=" links" style="color: black; margin-top: 4vh;">
                     <a href="{{ route('banners.create') }}">Criar Painel</a>
                     <a href="{{route('banners.index')}}">Painéis</a>
                 </div>
